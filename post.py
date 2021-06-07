@@ -10,8 +10,8 @@ class Post:
 
     def create_post(self):
         """
-        Take in (id, title, post) ads to db 
-        and returns the single post.
+        Take in (id, title, post)
+        and returns a single post.
         """
         new_post = {
             'id':self.id,
@@ -19,7 +19,6 @@ class Post:
             'post':self.post,
         }
 
-        # save to db
         self.data.append(new_post)
         return new_post
 
@@ -41,7 +40,7 @@ class Post:
     
     def update_post(self, id, title, post):
         """
-        Takes in id and updates post associated with id and returns it.
+        Takes in id and updates post associated with id and returns updated post.
         """
         for i in self.data:
             if i['id'] == id:
@@ -53,7 +52,7 @@ class Post:
 
     def delete_post(self, id):
         """
-        Takes in id and deletes post associated with id returns true.
+        Takes in id and deletes post associated with id returns deleted post.
         """
         for i in range(len(self.data)):
             if self.data[i]['id'] == id:
