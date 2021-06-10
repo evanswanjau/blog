@@ -1,7 +1,7 @@
 """
 Tests to take care of our posts
 """
-from ..src.post import Post
+from ..models.post import Post
 
 test_data = [
     {"post": "This is a new post", "id": 30, "title": "New Post"},
