@@ -3,7 +3,6 @@ This file contains the Post class that takes care of everything invlovled in pos
 """
 import random
 
-
 class Post:
     """
     This class creates, reads, updates, delete posts;
